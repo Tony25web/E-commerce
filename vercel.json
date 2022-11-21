@@ -12,27 +12,27 @@
       "dest": "./app.js"
     },
     {
-      "src": "/controllers(.*)",
+      "src": "./controllers(.*)",
       "dest": "./app.js"
     },
     {
-      "src": "/middlewares(.*)",
+      "src": "./middlewares(.*)",
       "dest": "./app.js"
     },
     {
-      "src": "models(.*)",
+      "src": "./models(.*)",
       "dest": "./app.js"
     },
     {
-      "src": "/routes(.*)",
+      "src": "./routes(.*)",
       "dest": "./app.js"
     },
     {
-      "src": "/utils(.*)",
+      "src": "./utils(.*)",
       "dest": "./app.js"
     },
     {
-      "src": "/validators(.*)",
+      "src": "./validators(.*)",
       "dest": "./app.js"
     }
   ]
