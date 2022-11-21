@@ -149,7 +149,7 @@
   },
   "scripts": {
     "start:dev": "nodemon app.js",
-    "start": "node app.js"
+    "start": "node index.js"
   },
   "Dependencies": {
     "body-parser": "^1.20.1",
