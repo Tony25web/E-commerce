@@ -8,7 +8,8 @@ const connect = require("./config/database").connect;
 const { ApiError } = require("./utils/ApiError");
 const MountRoutes = require("./routes/index");
 const { errorHandler } = require("./middlewares/errorHandler");
-require("dotenv").config({ path: "config.env" });
+// require("dotenv").config({ path: "config.env" });
+require("dotenv").config();
 // express app
 const app = express();
 

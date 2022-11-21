@@ -2,14 +2,38 @@
   "version": 2,
   "builds": [
     {
-      "src": "app.js",
+      "src": "./app.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "app.js"
+      "src": "./config(.*)",
+      "dest": "./app.js"
+    },
+    {
+      "src": "/controllers(.*)",
+      "dest": "./app.js"
+    },
+    {
+      "src": "/middlewares(.*)",
+      "dest": "./app.js"
+    },
+    {
+      "src": "models(.*)",
+      "dest": "./app.js"
+    },
+    {
+      "src": "/routes(.*)",
+      "dest": "./app.js"
+    },
+    {
+      "src": "/utils(.*)",
+      "dest": "./app.js"
+    },
+    {
+      "src": "/validators(.*)",
+      "dest": "./app.js"
     }
   ]
 }
