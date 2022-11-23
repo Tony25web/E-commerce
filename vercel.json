@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "./api/index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "./api/config(.*)",
+      "dest": "./api/index.js"
+    },
+    {
+      "src": "./api/controllers(.*)",
+      "dest": "./api/index.js"
+    },
+    {
+      "src": "./api/middlewares(.*)",
+      "dest": "./api/index.js"
+    },
+    {
+      "src": "./api/models(.*)",
+      "dest": "./api/index.js"
+    },
+    {
+      "src": "./api/routes(.*)",
+      "dest": "./api/index.js"
+    },
+    {
+      "src": "./api/utils(.*)",
+      "dest": "./api/index.js"
+    },
+    {
+      "src": "./api/validators(.*)",
+      "dest": "./api/index.js"
+    }
+  ]
+}
