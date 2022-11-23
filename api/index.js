@@ -18,7 +18,7 @@ const compression = require("compression");
 //MiddleWares
 // Cross Origin Resource Sharing configuration
 app.use(cors());
-app.get("/", function (req, res) {
+app.get("/api", function (req, res) {
   res.send("the api is working well");
 });
 //compress all response
