@@ -9,7 +9,7 @@ const {
   DeleteUserCart,
   updateCateItemQuantity,
   applyCouponsOnProduct,
-} = require("../controllers/cart");
+} = require("../controllers/Cart");
 router.use(AuthController.validateJWT, AuthController.authorizedTo("user"));
 router.route("/applyCoupon").put(applyCouponsOnProduct);
 router
