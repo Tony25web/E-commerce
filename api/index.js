@@ -19,6 +19,8 @@ const compression = require("compression");
 // Cross Origin Resource Sharing configuration
 app.use(cors());
 app.get("/api", function (req, res) {
+  res.setHeader("Content-Type", "text/html");
+  res.setHeader("Cache-Control", "s-max-age=1, stale-while-revalidate");
   res.send("the api is working well");
 });
 //compress all response
